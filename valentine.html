@@ -306,7 +306,7 @@ loader.load(
         const finalBox = new THREE.Box3().setFromObject(model);
         const finalCenter = finalBox.getCenter(new THREE.Vector3());
         controls.target.copy(finalCenter);
-        camera.position.set(finalCenter.x, finalCenter.y + 0.5, finalCenter.z + 3.5);
+        camera.position.set(finalCenter.x, finalCenter.y + 0.8, finalCenter.z + 3.5);
 
         // Remove loading text
         document.getElementById('loading').style.display = 'none';
